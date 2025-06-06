@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.web</groupId>
-	<artifactId>E_com</artifactId>
+	<artifactId>Ecom</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>E_com</name>
+	<name>Ecom</name>
 	<description>Demo ecommerce-project</description>
 	<url/>
 	<licenses>
@@ -33,6 +33,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

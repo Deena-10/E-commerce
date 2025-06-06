@@ -5,7 +5,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import demo.webproject.entity.Product;
+import demo.webproject.Entity.Product;
 import demo.webproject.repository.ProductRepository;
 
 @Service
@@ -25,7 +25,6 @@ public class ProductService {
         return repository.save(product);
     }
 
-    // Optional: update product by ID
     public Product updateProduct(Long id, Product productDetails) {
         Optional<Product> existing = repository.findById(id);
         if (existing.isEmpty()) {
@@ -43,13 +42,12 @@ public class ProductService {
         return repository.save(product);
     }
 
-    // Add this delete method
     public boolean deleteProduct(Long id) {
         Optional<Product> existing = repository.findById(id);
         if (existing.isEmpty()) {
-            return false; // product not found
+            return false;
         }
         repository.deleteById(id);
-        return true; // product deleted
+        return true;
     }
 }
